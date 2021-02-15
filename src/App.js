@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import ProfilePic from "./Images/favicon.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <div className="TID">
+          <div className="title">
+            <h1>
+              {" "}
+              KHA'A <span>Store</span>
+            </h1>
+          </div>
+          <div className="discription">
+            <p>
+              <b>Initializing a new App</b>
+            </p>
+          </div>
+        </div>
       </header>
+      <div className="image">{/* <img src={ProfilePic} /> */}</div>
     </div>
   );
 }
