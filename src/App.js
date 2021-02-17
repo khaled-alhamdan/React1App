@@ -1,28 +1,27 @@
-import logo from "./logo.svg";
+import SellingPro from "./products";
+import { Header, BackG, Allin1, ImagesAdjustments } from "./styles";
 import "./App.css";
-import ProfilePic from "./Images/favicon.jpg";
+import ProductsList from "./Components/ProductsList";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <header>
-        <div className="TID">
-          <div className="title">
-            <h1>
-              {" "}
-              KHA'A <span>Store</span>
-            </h1>
+    <>
+      {/* background Image */}
+      <BackG>
+        {/* Header styling and components */}
+        <Header>
+          <h1>KHA'A Store</h1>
+          <div>
+            <Allin1>
+              <b>All in one App</b>
+            </Allin1>
           </div>
-          <div className="discription">
-            <p>
-              <b>Initializing a new App</b>
-            </p>
-          </div>
-        </div>
-      </header>
-      <div className="image">{/* <img src={ProfilePic} /> */}</div>
-    </div>
+        </Header>
+        {/* products */}
+        <ProductsList />
+      </BackG>
+    </>
   );
-}
+};
 
 export default App;

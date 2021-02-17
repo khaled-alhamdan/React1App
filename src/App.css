@@ -37,39 +37,10 @@
   }
 }
 
-.TID {
-  border: 5px solid #282c34;
-  padding: 2px 2px;
-  text-align: center;
-  font-family: monospace;
-  /* margin-left: auto; */
-}
-
-/* .title span {
-  font-family: cursive;
-} */
-
-.discription {
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 2px;
-}
-
-.image {
+/* .image {
   padding: 0px 0px 20px 0px;
   width: 100vw;
-  height: 100vh;
   background-image: url("./Images/favicon.jpg");
   background-size: auto;
   background-position: center;
-  position: relative;
-}
-
-/* .image {
-  height: 90vh; 100% of view port height
-  background-image: url("./Images/favicon.jpg");
-  background-position: center;
-  background-size: cover;
-  overflow-x: hidden;
-  position: relative; */
-/* } */
+} */
