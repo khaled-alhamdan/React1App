@@ -2,7 +2,7 @@ import tabasco from "./Images/download.jpeg";
 import eyemask from "./Images/eyemask.jpeg";
 import calculator from "./Images/calculator.jpeg";
 
-const SellingPro = [
+const products = [
   { productName: "Calculator", productPrice: "5 K.D.", productPic: calculator },
   {
     productName: "The special Eye Mask",
@@ -12,4 +12,4 @@ const SellingPro = [
   { productName: "Tabasco", productPrice: "7 K.D.", productPic: tabasco },
 ];
 
-export default SellingPro;
+export default products;

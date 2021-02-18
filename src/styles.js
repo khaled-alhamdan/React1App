@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "./Images/favicon.jpg";
+import background from "./Images/khaaStoreImg.jpg";
 
 export const Header = styled.header`
   padding: 2px 2px;
@@ -18,6 +18,7 @@ export const Allin1 = styled.p`
 export const BackG = styled.div`
   padding: 0px 0px 20px 0px;
   width: 100vw;
+  height: 50vh;
   background-image: url(${background});
   background-size: auto;
   background-position: center;
@@ -25,7 +26,7 @@ export const BackG = styled.div`
 
 export const ImagesAdjustments = styled.img`
   display: block;
-  height: 25vh;
+  height: auto;
   width: 30vw;
   margin-left: auto;
   margin-right: auto;
@@ -36,12 +37,12 @@ export const ImagesAdjustments = styled.img`
 
 export const MidP = styled.p`
   text-align: center;
+  font-size: 90%;
   color: white;
   font-family: monospace;
-  padding: 4px 4px;
+  padding: 5px 2px;
   margin-left: auto;
   margin-right: auto;
-  border: 6px solid black;
   background-color: black;
-  padding: 2px 2px;
+  /* width: 40%; */
 `;
