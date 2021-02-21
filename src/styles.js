@@ -1,12 +1,21 @@
-import styled from "styled-components";
+// import styled from "styled-components";
+// Importing Global stayle for theme
+import styled, { createGlobalStyle } from "styled-components";
 import background from "./Images/khaaStoreImg.jpg";
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    color: ${(props) => props.theme.mainColor};
+    background-color: ${(props) => props.theme.whiteBackground};
+  }
+`;
 
 export const Header = styled.header`
   padding: 2px 2px;
   text-align: center;
-  color: white;
+  color: ${(props) => props.theme.white};
   font-family: monospace;
-  background-color: black;
+  background-color: ${(props) => props.theme.blackBackground};
 `;
 
 export const Allin1 = styled.p`
@@ -40,9 +49,9 @@ export const MidP = styled.p`
   font-size: 90%;
   color: white;
   font-family: monospace;
-  padding: 5px 2px;
+  padding: 15px 0px;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+  background-color: ${(props) => props.theme.blackBackground};
   /* width: 40%; */
 `;
