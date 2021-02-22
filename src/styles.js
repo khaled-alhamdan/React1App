@@ -74,3 +74,10 @@ export const ThemeButton = styled.button`
     outline: 0;
   }
 `;
+
+export const SearchBarStyled = styled.input`
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 40%;
+`;

@@ -1,9 +1,11 @@
 import React from "react";
 import { Header, KhaImg, Allin1 } from "../styles";
 import ProductsList from "./ProductsList";
+// import Navbar from "./Navbar";
 
 const HomePage = () => {
   return (
+    // Continer Div
     <>
       {/* Header styling and components */}
       <Header>
