@@ -9,12 +9,13 @@ import SearchBar from "./SearchBar";
 
 const ProductsList = () => {
   const [query, setQuery] = useState("");
+  const filteredProducts = products
+    .filter((product) => product.productName.includes(query))
+    .map((x) => <ProductsItem product={x} key={x.id} />);
   return (
     <>
       <SearchBar setQuery={setQuery} />
-      {products.map((x) => (
-        <ProductsItem product={x} key={x.id} />
-      ))}
+      {filteredProducts}
     </>
   );
 };
